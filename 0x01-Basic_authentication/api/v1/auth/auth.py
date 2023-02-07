@@ -4,6 +4,7 @@ from typing import List, TypeVar
 from flask import request
 
 """
+Class for the authentication module
 """
 
 
@@ -13,7 +14,6 @@ class Auth(object):
     """
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
-
         Args:
             path:
             excluded_paths:
@@ -22,14 +22,12 @@ class Auth(object):
 
     def authorization_header(self, request=None) -> str:
         """
-
         Args:
             request:
         Returns: String header
         """
     def current_user(self, request=None) -> TypeVar('User'):
         """
-
         Args:
             request:
         Returns: User
