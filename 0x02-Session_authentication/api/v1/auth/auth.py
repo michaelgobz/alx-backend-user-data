@@ -5,6 +5,7 @@ Class for the authentication module
 from typing import List, TypeVar
 
 from flask import request
+import os
 
 
 class Auth(object):
@@ -57,3 +58,10 @@ class Auth(object):
         Returns: None
         """
         return None
+    
+    def session_cookie(self, request=None):
+        if request is None:
+            return None
+        else:
+            _my_session_id  = os.getenv('SESSION_NAME')
+            return request.cookies.get(_my_session_id)
