@@ -25,6 +25,11 @@ if AUTH_TYPE == 'basic_auth':
 
     auth = BasicAuth()
 
+if AUTH_TYPE == 'session_auth':
+    from api.v1.auth import SessionAuthBase
+    
+    auth = SessionAuthBase()
+
 
 @app.errorhandler(404)
 def not_found(error) -> str:
