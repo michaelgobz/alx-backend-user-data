@@ -33,6 +33,7 @@ class Auth(object):
                 return False
             else:
                 return True
+
     @staticmethod
     def authorization_header(self, request=None) -> str:
         """
