@@ -79,7 +79,7 @@ class BasicAuth(BaseAuth):
             for user in users:
                 if user.is_valid_password(user_pwd):
                     return user
-        except Exception:
+        except:
             return None
 
     def current_user(self, request=None) -> typing.TypeVar('User'):
@@ -92,5 +92,5 @@ class BasicAuth(BaseAuth):
             user = self.user_object_from_credentials(credentials[0],
                                                      credentials[1])
             return user
-        except Exception:
+        except:
             return None
