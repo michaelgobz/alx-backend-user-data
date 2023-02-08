@@ -53,6 +53,11 @@ def forbidden(error) -> str:
 
 @app.before_request
 def before_request() -> str:
+    """
+    function to check for authentication
+    Returns: str
+
+    """
     if auth is None:
         return
     excluded_paths = ['/', '/api/v1/status/',

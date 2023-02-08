@@ -10,7 +10,7 @@ Class for the authentication module
 
 class Auth(object):
     """
-    base auth class
+    authentication base class
     """
 
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
