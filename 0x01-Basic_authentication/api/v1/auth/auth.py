@@ -11,7 +11,7 @@ class Auth(object):
     """
     authentication base class
     """
-
+    @staticmethod
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
         require authorization
@@ -33,7 +33,7 @@ class Auth(object):
                 return False
             else:
                 return True
-
+    @staticmethod
     def authorization_header(self, request=None) -> str:
         """
         check for the auth headers

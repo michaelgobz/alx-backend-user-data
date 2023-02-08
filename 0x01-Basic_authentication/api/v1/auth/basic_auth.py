@@ -44,7 +44,7 @@ class BasicAuth(BaseAuth):
             base64decode = base64.b64encode(base64encode)
             return base64decode.decode('utf-8')
 
-        except"Not valid Base64 encode":
+        except:
             return None
 
     def extract_user_credentials(self, decoded_base64_authorization_header: str) -> typing.Tuple[str, str]:
@@ -63,7 +63,6 @@ class BasicAuth(BaseAuth):
         return credentials[0], credentials[1]
 
     def user_object_from_credentials(self, user_email: str, user_pwd: str) -> typing.TypeVar('User'):
-
         """ returns the User instance based on his email and password
 
         Args:
@@ -89,8 +88,7 @@ class BasicAuth(BaseAuth):
             base64Header = self.extract_base64_authorization_header(header)
             decodeValue = self.decode_base64_authorization_header(base64Header)
             credentials = self.extract_user_credentials(decodeValue)
-            user = self.user_object_from_credentials(credentials[0],
-                                                     credentials[1])
+            user = self.user_object_from_credentials(credentials[0],credentials[1])
             return user
         except:
             return None
