@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="119828d7-daab-40e6-aaff-150058b1bfa9" name="Changes" comment="basic auth" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LP086XqZXmIM7pR1v3l8bYLdQq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/michael/source/repos/michaelgobz/alx-backend-user-data/0x01-Basic_authentication/api/v1/app.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Flask (api/v1/app.py)" type="Python.FlaskServer" nameIsGenerated="true">
+      <module name="0x01-Basic_authentication" />
+      <option name="target" value="C:\Users\michael\source\repos\michaelgobz\alx-backend-user-data\0x01-Basic_authentication\api\v1\app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="API_HOST" value="0.0.0.0" />
+        <env name="API_PORT" value="5000" />
+        <env name="AUTH_TYPE" value="auth" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\michael\source\repos\michaelgobz\alx-backend-user-data\0x01-Basic_authentication\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.9 (0x01-Basic_authentication)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="119828d7-daab-40e6-aaff-150058b1bfa9" name="Changes" comment="" />
+      <created>1675757247565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675757247565</updated>
+      <workItem from="1675757248734" duration="10552000" />
+      <workItem from="1675843412075" duration="3132000" />
+    </task>
+    <task id="LOCAL-00001" summary="unuthorized route">
+      <created>1675758037727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675758037727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="forbidden handler">
+      <created>1675758537203</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675758537203</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed the markupsafe and werkzeug deps">
+      <created>1675760012067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675760012067</updated>
+    </task>
+    <task id="LOCAL-00004" summary="api is running">
+      <created>1675760608555</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675760608555</updated>
+    </task>
+    <task id="LOCAL-00005" summary="auths and error bugs corrected">
+      <created>1675762441227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675762441227</updated>
+    </task>
+    <task id="LOCAL-00006" summary="auths and error bugs corrected">
+      <created>1675763876925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675763876925</updated>
+    </task>
+    <task id="LOCAL-00007" summary="checks for the authorization header">
+      <created>1675765054647</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675765054647</updated>
+    </task>
+    <task id="LOCAL-00008" summary="basic authentication">
+      <created>1675766360006</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675766360006</updated>
+    </task>
+    <task id="LOCAL-00009" summary="basic authentication">
+      <created>1675766848039</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675766848039</updated>
+    </task>
+    <task id="LOCAL-00010" summary="basic authentication">
+      <created>1675775179280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675775179280</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added necessary function documentation">
+      <created>1675843937003</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675843937003</updated>
+    </task>
+    <task id="LOCAL-00012" summary="module level doc strings sorted">
+      <created>1675844460957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675844460957</updated>
+    </task>
+    <task id="LOCAL-00013" summary="basic auth">
+      <created>1675845096071</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675845096072</updated>
+    </task>
+    <task id="LOCAL-00014" summary="basic auth">
+      <created>1675848156177</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675848156177</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="unuthorized route" />
+    <MESSAGE value="forbidden handler" />
+    <MESSAGE value="fixed the markupsafe and werkzeug deps" />
+    <MESSAGE value="api is running" />
+    <MESSAGE value="auths and error bugs corrected" />
+    <MESSAGE value="checks for the authorization header" />
+    <MESSAGE value="basic authentication" />
+    <MESSAGE value="added necessary function documentation" />
+    <MESSAGE value="module level doc strings sorted" />
+    <MESSAGE value="basic auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic auth" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/0x01_Basic_authentication$app.coverage" NAME="app Coverage Results" MODIFIED="1675757470491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1" />
+    <SUITE FILE_PATH="coverage/0x01_Basic_authentication$Flask__api_v1_app_py_.coverage" NAME="Flask (api/v1/app.py) Coverage Results" MODIFIED="1675843892167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
