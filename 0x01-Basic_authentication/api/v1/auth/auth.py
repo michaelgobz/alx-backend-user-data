@@ -11,7 +11,6 @@ class Auth(object):
     """
     authentication base class
     """
-    @staticmethod
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
         require authorization
@@ -34,22 +33,20 @@ class Auth(object):
             else:
                 return True
 
-    @staticmethod
-    def authorization_header(self, request=None) -> str:
+    def authorization_header(self, req=None) -> str:
         """
         check for the auth headers
         Args:
-            request:
+            req:
         Returns: String header
         """
-        if request is None:
+        if req is None:
             return None
-        if not request.headers.get('Authorization'):
+        if not req.headers.get('Authorization'):
             return None
-        return request.headers.get('Authorization')
+        return req.headers.get('Authorization')
 
-    @staticmethod
-    def current_user(request=None) -> TypeVar('User'):
+    def current_user(self, request=None) -> TypeVar('User'):
         """
         current users
         Args:
