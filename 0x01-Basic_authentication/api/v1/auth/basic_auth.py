@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
+"""
+module that Implements the basic auth standard
+"""
 import base64
 import typing
 
 from api.v1.auth import BaseAuth
 from models.user import User
-
-"""
-module that Implements the basic auth standard
-"""
 
 
 class BasicAuth(BaseAuth):

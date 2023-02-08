@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from typing import List, TypeVar
-
-from flask import request
-
 """
 Class for the authentication module
 """
+from typing import List, TypeVar
+
+from flask import request
 
 
 class Auth(object):
