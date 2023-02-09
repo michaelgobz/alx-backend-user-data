@@ -55,7 +55,8 @@ class SessionDBAuth(SessionExpAuth):
             if session_id:
                 if super().destroy_session(request):
                     try:
-                        us_list = UserSession.search({session_id: session_id})
+                        us_list = \
+                        UserSession.search({session_id: session_id})
                         for us in us_list:
                             us.remove()
                             return True

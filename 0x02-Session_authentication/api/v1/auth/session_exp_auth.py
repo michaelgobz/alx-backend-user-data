@@ -33,7 +33,8 @@ class SessionExpAuth(SessionAuth):
             user_id = self.user_id_by_session_id.get(session_id)
             if not user_id:
                 return
-            session_dict = {'user_id': user_id, 'created_at': datetime.now()}
+            session_dict =\
+            {'user_id': user_id, 'created_at': datetime.now()}
             self.user_id_by_session_id[session_id] = session_dict
             return session_id
 

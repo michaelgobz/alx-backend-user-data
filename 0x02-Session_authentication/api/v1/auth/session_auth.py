@@ -16,7 +16,8 @@ class SessionAuth(Auth):
     """
     user_id_by_session_id = {}
 
-    def create_session(self, user_id: str = None) -> str:
+    def create_session(self,
+                       user_id: str = None) -> str:
         """
         create_session.
         """
@@ -34,7 +35,8 @@ class SessionAuth(Auth):
             return
         return SessionAuth.user_id_by_session_id.get(session_id, None)
 
-    def current_user(self, request=None) -> TypeVar('User'):
+    def current_user(self,
+                     request=None) -> TypeVar('User'):
         """
         current_user.
         """
