@@ -14,8 +14,9 @@ class BasicAuth(BaseAuth):
     class Basic Authentication
     """
 
-    def extract_base64_authorization_header\
-            (self, authorization_header: str) -> str:
+    def extract_base64_authorization_header(self,
+                                            authorization_header:
+                                            str) -> str:
         """ Base64 authorization
 
         Args:
@@ -30,8 +31,9 @@ class BasicAuth(BaseAuth):
         base_val = authorization_header.split(' ')
         return base_val[1]
 
-    def decode_base64_authorization_header\
-            (self, base64_authorization_header: str) -> str:
+    def decode_base64_authorization_header(self,
+                                           base64_authorization_header:
+                                           str) -> str:
         """ decode base64 auth header
 
         Args:
@@ -49,10 +51,9 @@ class BasicAuth(BaseAuth):
         except (RuntimeError, TypeError, NameError):
             return None
 
-    def extract_user_credentials\
-            (self,
-             decoded_base64_authorization_header:
-                str) -> typing.Tuple[str, str]:
+    def extract_user_credentials(self,
+                                 decoded_base64_authorization_header:
+                                 str) -> typing.Tuple[str, str]:
         """ Extrac the user credentials
 
         Args:
@@ -67,8 +68,8 @@ class BasicAuth(BaseAuth):
         credentials = decoded_base64_authorization_header.split(':', 1)
         return credentials[0], credentials[1]
 
-    def user_object_from_credentials\
-            (self, user_email: str, user_pwd: str) -> typing.TypeVar('User'):
+    def user_object_from_credentials(self, user_email: str,
+                                     user_pwd: str) -> typing.TypeVar('User'):
         """ returns the User instance based on his email and password
 
         Args:
