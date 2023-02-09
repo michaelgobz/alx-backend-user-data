@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="119828d7-daab-40e6-aaff-150058b1bfa9" name="Changes" comment="basic auth">
+    <list default="true" id="119828d7-daab-40e6-aaff-150058b1bfa9" name="Changes" comment="auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/auth/auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/michael/source/repos/michaelgobz/alx-backend-user-data/0x01-Basic_authentication/api/v1/app.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/michael/Desktop/swiftmovers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Flask (api/v1/app.py)" type="Python.FlaskServer" nameIsGenerated="true">
       <module name="0x01-Basic_authentication" />
@@ -63,7 +62,7 @@
       <envs>
         <env name="API_HOST" value="0.0.0.0" />
         <env name="API_PORT" value="5000" />
-        <env name="AUTH_TYPE" value="auth" />
+        <env name="AUTH_TYPE" value="basic_auth" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\michael\source\repos\michaelgobz\alx-backend-user-data\0x01-Basic_authentication\venv\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.9 (0x01-Basic_authentication)" />
@@ -86,7 +85,8 @@
       <updated>1675757247565</updated>
       <workItem from="1675757248734" duration="10552000" />
       <workItem from="1675843412075" duration="3132000" />
-      <workItem from="1675851820609" duration="745000" />
+      <workItem from="1675851820609" duration="1443000" />
+      <workItem from="1675854664400" duration="21000" />
     </task>
     <task id="LOCAL-00001" summary="unuthorized route">
       <created>1675758037727</created>
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675848156177</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="auth">
+      <created>1675852652916</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852652916</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +213,8 @@
     <MESSAGE value="added necessary function documentation" />
     <MESSAGE value="module level doc strings sorted" />
     <MESSAGE value="basic auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic auth" />
+    <MESSAGE value="auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -221,6 +229,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/0x01_Basic_authentication$app.coverage" NAME="app Coverage Results" MODIFIED="1675757470491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/v1" />
-    <SUITE FILE_PATH="coverage/0x01_Basic_authentication$Flask__api_v1_app_py_.coverage" NAME="Flask (api/v1/app.py) Coverage Results" MODIFIED="1675852322983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/0x01_Basic_authentication$Flask__api_v1_app_py_.coverage" NAME="Flask (api/v1/app.py) Coverage Results" MODIFIED="1675852958905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
