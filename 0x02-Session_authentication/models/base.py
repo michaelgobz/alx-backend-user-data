@@ -136,4 +136,3 @@ class Base():
             return True
 
         return list(filter(_search, DATA[s_class].values()))
-    
