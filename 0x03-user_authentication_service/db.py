@@ -44,17 +44,30 @@ class DB:
         db_session.commit()
         return new_user
 
-    def find_user_by(self, email: str = None) -> TypeVar(User):
+    def find_user_by(self, **kwargs) -> TypeVar(User):
         """
         find user by the email arguments
         """
         db_session = self.__session()
         try:
-            return [user for user in
-                    db_session.query.filter(User.email == email)][0]
-
+            return db_session.query(User).filter(**kwargs).first()
         except(NoResultFound, InvalidRequestError) as e:
             if isinstance(e, NoResultFound):
                 print("NoResultFound")
             elif isinstance(e, InvalidRequestError):
                 print("invalidRequestError")
+
+    def update_user(self, user_id: int, **kwargs):
+        """
+        update a known user
+        """
+        user = self.find_user_by(id=user_id)
+        try:
+            for key, value in kwargs:
+                if hasattr(user, key):
+                    setattr(user, key,value)
+                else:
+                    raise InvalidRequestError()
+            self.__session().commit()
+        except (NoResultFound,InvalidRequestError, ValueError):
+            raise ValueError
