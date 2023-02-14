@@ -8,6 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.session import Session
 from typing import TypeVar
+from sqlalchemy.exc import NoResultFound, InvalidRequestError
 
 from user import Base, User
 
@@ -42,3 +43,18 @@ class DB:
         db_session.add(new_user)
         db_session.commit()
         return new_user
+
+    def find_user_by(self, email: str = None) -> TypeVar(User):
+        """
+        find user by the email arguments
+        """
+        db_session = self.__session()
+        try:
+            return [user for user in
+                    db_session.query.filter(User.email == email)][0]
+
+        except(NoResultFound, InvalidRequestError) as e:
+            if isinstance(e, NoResultFound):
+                print("NoResultFound")
+            elif isinstance(e, InvalidRequestError):
+                print("invalidRequestError")
