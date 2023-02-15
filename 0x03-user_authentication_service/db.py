@@ -39,9 +39,8 @@ class DB:
         add user to the db based on the db session
         """
         new_user = User(email=email, hashed_password=hashed_password)
-        db_session = self.__session()
-        db_session.add(new_user)
-        db_session.commit()
+        self._session.add(new_user)
+        self._session.commit()
         return new_user
 
     def find_user_by(self, **kwargs) -> TypeVar(User):
