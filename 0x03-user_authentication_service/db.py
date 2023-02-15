@@ -64,9 +64,9 @@ class DB:
         try:
             for key, value in kwargs:
                 if hasattr(user, key):
-                    setattr(user, key,value)
+                    setattr(user, key, value)
                 else:
                     raise InvalidRequestError()
             self.__session().commit()
-        except (NoResultFound,InvalidRequestError, ValueError):
+        except (NoResultFound, InvalidRequestError, ValueError):
             raise ValueError
