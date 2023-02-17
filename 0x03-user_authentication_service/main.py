@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Main file for testing web server for the corresponding end-points.
 """

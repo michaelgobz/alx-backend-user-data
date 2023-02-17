@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/python3
 """DB module
 """
 import typing
@@ -8,7 +8,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.session import Session
 from typing import TypeVar
-from sqlalchemy.exc import NoResultFound, InvalidRequestError
+from sqlalchemy.exc import InvalidRequestError
+from sqlalchemy.orm.exc import NoResultFound
 
 from user import Base, User
 

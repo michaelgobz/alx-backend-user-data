@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ Authentication helper class
 """
 from bcrypt import hashpw, gensalt, checkpw
 from db import DB
 import uuid
 from user import User
-from sqlalchemy.exc import NoResultFound
+from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.exc import InvalidRequestError
 from typing import Union
 
