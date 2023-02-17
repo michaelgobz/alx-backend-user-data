@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Authentication helper class
 """
 from bcrypt import hashpw, gensalt, checkpw
