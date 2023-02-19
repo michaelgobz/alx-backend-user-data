@@ -48,7 +48,7 @@ class DB:
         """
         find user by the email arguments
         """
-        db_session = self.__session()
+        db_session = self.__session
         try:
             return db_session.query(User).filter(**kwargs).first()
         except(NoResultFound, InvalidRequestError) as e:
@@ -68,6 +68,6 @@ class DB:
                     setattr(user, key, value)
                 else:
                     raise InvalidRequestError()
-            self.__session().commit()
+            self.__session.commit()
         except (NoResultFound, InvalidRequestError, ValueError):
             raise ValueError
